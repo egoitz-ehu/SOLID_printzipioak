@@ -7,6 +7,10 @@ public class AuthService {
 		this.service=service;
 	}
 	
+	public void setService(IService service) {
+		this.service=service;
+	}
+	
 	public boolean signIn(String log, String pass) {
 		return service.signIn(log, pass);
 	}
