@@ -1,7 +1,10 @@
 package srp;
 
 public class DeductionService {
-	private int deductionPercentage=5; // Edozein
+	private int deductionPercentage;
+	public DeductionService(int deductionPercentage) {
+		this.deductionPercentage=deductionPercentage;
+	}
 	public float calculateDeduction(float billAmount) {
 		if (billAmount >50000)
 			 return (billAmount * deductionPercentage +5) / 100;

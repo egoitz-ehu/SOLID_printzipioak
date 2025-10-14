@@ -13,7 +13,7 @@ public class Bill {
 	
 	
 	public void totalCalc() {
-		DeductionService deductionService = new DeductionService();
+		DeductionService deductionService = new DeductionService(5);
 		VATService vatService = new VATService();
 		billDeduction = deductionService.calculateDeduction(billAmount);
 		vat = vatService.calculateVAT(billAmount,code);
