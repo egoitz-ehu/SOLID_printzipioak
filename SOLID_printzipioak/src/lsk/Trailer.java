@@ -1,11 +1,11 @@
 package lsk;
 
 public class Trailer extends TransportationDevice implements IPlate {
-	private String plae;
+	private String plate;
+	
 	@Override
 	public void fillPlate(String plate) {
-		// TODO Auto-generated method stub
-		
+		// Dagokion kodea
 	}
 
 }
